@@ -27,8 +27,10 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 Navegue até a pasta do projeto e instale as dependências utilizando o comando:
 
 ```bash
-npm install
+npx create-next-app@latest
 ```
+
+após isso nomear o projeto e aceitar todas as opções com exceção da última.
 
 ### 3. Executar o Projeto
 
@@ -42,10 +44,16 @@ O site estará disponível em [http://localhost:3000](http://localhost:3000).
 
 ## Considerações Técnicas
 
-A divisão de páginas foi implementada de forma experimental, seguindo um tutorial. Essa abordagem foi escolhida para evitar o carregamento pesado de todas as cartas em uma única página, o que poderia comprometer a experiência do usuário devido à lentidão. Embora o sistema esteja funcionando bem, melhorias adicionais na performance podem ser feitas no futuro.
+A divisão de páginas foi implementada de forma experimental, seguindo um tutorial da internet. Essa abordagem foi escolhida para evitar o carregamento pesado de todas as cartas em uma única página, o que poderia comprometer a experiência do usuário devido à lentidão. Além disso, outras funcionalidades, como o **resetar a página para a primeira página** sempre que uma pesquisa é realizada, também foram baseadas em tutoriais que consultei durante o desenvolvimento.
+
+Para a construção do projeto, tomei quase totalmente como base dois workshops que utilizei para aprender a integrar APIs e criar projetos em **Next.js** com **TypeScript**:
+
+1. **Workshop com a API do Rick and Morty** ([Link para a API](https://rickandmortyapi.com)): Este workshop ensinou como consumir a API pública do Rick and Morty em um projeto de Next.js com TypeScript, abordando o consumo de dados e a implementação de funcionalidades semelhantes às usadas neste projeto de cartas de Pokémon.
+  
+2. **Workshop com a CatAPI** ([Link para a API](https://thecatapi.com)): Este workshop também usou o Next.js e TypeScript para criar um projeto consumindo a CatAPI, onde aprendi algumas funcionalidades no trabalho com APIs em projetos React/Next.js.
+
+Embora o sistema esteja funcionando bem, melhorias adicionais na performance e na organização do código podem ser feitas no futuro.
 
 ## Licença
 
 Este projeto é de código aberto e pode ser usado e modificado conforme desejado.
-
----
