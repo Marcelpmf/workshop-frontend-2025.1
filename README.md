@@ -52,8 +52,6 @@ Para a construção do projeto, tomei quase totalmente como base dois workshops 
   
 2. **Workshop com a CatAPI** ([Link para a API](https://thecatapi.com)): Este workshop também usou o Next.js e TypeScript para criar um projeto consumindo a CatAPI, onde aprendi algumas funcionalidades no trabalho com APIs em projetos React/Next.js.
 
-Embora o sistema esteja funcionando bem, melhorias adicionais na performance e na organização do código podem ser feitas no futuro.
-
 ## Licença
 
 Este projeto é de código aberto e pode ser usado e modificado conforme desejado.
