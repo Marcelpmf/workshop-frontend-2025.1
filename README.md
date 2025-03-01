@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto de Cartas de Pokémon
 
-## Getting Started
+Este projeto é um site desenvolvido com **Next.js** e **TypeScript**, que consome a API pública [Pokémon TCG API](https://docs.pokemontcg.io/) para gerar cartas de Pokémon. O site divide as cartas em várias páginas, exibindo **10 cartas por página**, com a funcionalidade de pesquisa para facilitar a busca por cartas específicas.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para renderização no lado do servidor e criação de páginas.
+- **TypeScript**: Linguagem JavaScript com tipagem estática para maior segurança e robustez.
+- **Pokémon TCG API**: API pública para acessar dados sobre cartas de Pokémon.
+
+## Funcionalidades
+
+- **Exibição de Cartas**: O site exibe cartas de Pokémon em formato de páginas, com **10 cartas por página**.
+- **Pesquisa por Nome**: O usuário pode pesquisar por cartas utilizando um campo de busca, digitando o nome do Pokémon desejado.
+- **Divisão de Páginas**: O sistema de divisão de páginas foi implementado para melhorar o desempenho do carregamento do site. Como o número total de cartas é muito grande, a exibição de todas as cartas em uma única página causaria lentidão. Portanto, a divisão em páginas foi uma solução para otimizar a performance.
+
+## Como Rodar o Projeto
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+```
+
+### 2. Instalar as Dependências
+
+Navegue até a pasta do projeto e instale as dependências utilizando o comando:
+
+```bash
+npm install
+```
+
+### 3. Executar o Projeto
+
+Para rodar o projeto em modo de desenvolvimento, use o comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O site estará disponível em [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Considerações Técnicas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A divisão de páginas foi implementada de forma experimental, seguindo um tutorial. Essa abordagem foi escolhida para evitar o carregamento pesado de todas as cartas em uma única página, o que poderia comprometer a experiência do usuário devido à lentidão. Embora o sistema esteja funcionando bem, melhorias adicionais na performance podem ser feitas no futuro.
 
-## Learn More
+## Licença
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto é de código aberto e pode ser usado e modificado conforme desejado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
